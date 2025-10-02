@@ -1,0 +1,56 @@
+/* * Estilos básicos para centrar el contenido y dar formato.
+         */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Centra el contenido a nivel de bloque (como los títulos) */
+        }
+
+        /* * Estilo para la primera imagen (la grande) 
+         */
+        .imagen-unica-contenedor {
+            width: 100%;
+            max-width: 600px; /* Ancho máximo para que no se extienda demasiado */
+            margin: 0 auto 40px auto; /* Centra el contenedor y agrega espacio abajo */
+            text-align: center;
+        }
+
+        .imagen-unica-contenedor img {
+            width: 100%; /* La imagen ocupa el 100% de su contenedor */
+            height: auto;
+            display: block; /* Elimina espacio extra debajo de la imagen */
+        }
+
+        /*
+         * Estilos para la Galería de imágenes
+         */
+        .galeria-contenedor {
+            max-width: 900px; /* Ancho máximo para la galería */
+            margin: 0 auto;
+            display: flex; /* Habilita Flexbox para alinear las imágenes en una fila */
+            justify-content: center; /* Centra las imágenes dentro del contenedor */
+            gap: 15px; /* Espacio entre las imágenes de la galería */
+            flex-wrap: wrap; /* Permite que las imágenes salten de línea en pantallas pequeñas */
+        }
+
+        .imagen-galeria {
+            flex: 1 1 200px; /* Crece, se encoge y tiene un ancho base de 200px */
+            max-width: 30%; /* Límite de ancho para que quepan tres por fila */
+            height: auto;
+            overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+        }
+
+        .imagen-galeria img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+            display: block;
+        }
+
+        /* Estilos de los títulos */
+        h1, h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
